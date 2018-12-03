@@ -17,7 +17,7 @@ class MSAppConfig extends ComponentBase {
 		return Settings::get('name', null);
 	}
 
-	public function themeColour() {
-		return Settings::get('theme_colour', null);
+	public function themeColor() {
+		return Settings::get('theme_color', null);
 	}
 }
