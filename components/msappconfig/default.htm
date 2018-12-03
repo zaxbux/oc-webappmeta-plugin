@@ -1,0 +1,9 @@
+{% if __SELF__.appName is not empty %}
+<meta name="application-name" content="{{ __SELF__.appName }}">
+
+{% endif %}
+{% if __SELF__.themeColour is not empty %}
+<meta name="msapplication-TileColour" content="{{ __SELF__.themeColour }}">
+
+{% endif %}
+<meta name="msapplication-config" content="/browserconfig.xml">

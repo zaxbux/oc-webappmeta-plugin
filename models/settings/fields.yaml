@@ -1,0 +1,178 @@
+fields:
+  # Required attributes
+  name:
+    span: left
+    label: App Name
+    comment: The name (max 45 characters) is the primary identifier of the app.
+    type: text
+    required: true
+    attributes:
+      maxlength: 45
+
+  short_name:
+    span: right
+    label: Short Name
+    comment: Short version (max 12 characters) of the app's name.
+    type: text
+    required: true
+    attributes:
+      maxlength: 12
+
+  author:
+    span: left
+    label: Author
+    comment:
+    type: text
+    required: true
+
+  description:
+    span: right
+    label: Description
+    comment: A plain text string (max 132 characters) that describes the extension.
+    type: text
+    required: true
+    attributes:
+      maxlength: 132
+
+tabs:
+  fields:
+    # App Identity
+    theme_color:
+      tab: Colours
+      span: left
+      label: Theme Color
+      comment: Used in manifest.json and browserconfig.xml
+      type: colorpicker
+      availableColors: []
+
+    background_color:
+      tab: Colours
+      span: right
+      label: Background Color
+      comment: The expected background color for the web application. Often loads before the stylesheet, ensuring a smooth transition.
+      type: colorpicker
+      availableColors: []
+
+    # Icons
+    ## Manifest.json Icons
+    app_icon_section:
+      tab: Icons
+      label: App Icons
+      comment: Used in manifest.json
+      type: section
+
+    app_icon_192:
+      tab: Icons
+      span: left
+      label: 192x192 App Icon
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 192
+      imageHeight: 192
+
+    app_icon_512:
+      tab: Icons
+      span: right
+      label: 512x512 App Icon
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 512
+      imageHeight: 512
+
+    ## MS Edge Icons
+    ms_tile_section:
+      tab: Icons
+      label: Microsoft Edge Tiles
+      comment: Used in browserconfig.xml
+      type: section
+
+    msapp_square70x70logo:
+      tab: Icons
+      span: left
+      label: Micrsoft Edge Tile 70x70
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 70
+      imageWidth: 70
+
+    msapp_square150x150logo:
+      tab: Icons
+      span: right
+      label: Micrsoft Edge Tile 150x150
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 150
+      imageWidth: 150
+
+    msapp_wide310x150logo:
+      tab: Icons
+      span: left
+      label: Micrsoft Edge Tile 310x150
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 310
+      imageHeight: 150
+
+    msapp_square310x310logo:
+      tab: Icons
+      span: right
+      label: Micrsoft Edge Tile 310x310
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 310
+      imageWidth: 310
+
+    # Advanced
+    version:
+      tab: Advanced
+      span: left
+      label: Version
+      comment:
+      type: text
+
+    version_name:
+      tab: Advanced
+      span: right
+      label: Version Name
+      comment:
+      type: text
+
+    lang:
+      tab: Advanced
+      span: left
+      label: Language
+      comment: The language of the manifest attributes
+      type: text
+
+    display_mode:
+      tab: Advanced
+      span: right
+      label: The preferred display mode for the web application.
+      comment: <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest#display">More details.</a>
+      commentHtml: true
+      type: dropdown
+      options:
+        browser: Browser (Default)
+        minimal-ui: Minimal UI
+        standalone: Standalone
+        fullscreen: Fullscreen
+
+    start_url:
+      tab: Advanced
+      label: Start URL
+      comment: The start_url tells the browser where your application should start when it is launched, and prevents the app from starting on whatever page the user was on when they added your app to their home screen.
+      type: text
+
+    # Custom JSON
+    custom_manifest:
+      tab: Advanced
+      label: Custom Manifest JSON
+      type: codeeditor
+      language: javascript
+      comment: This JSON will be appended to the web app manifest, and override any exsiting properties.
