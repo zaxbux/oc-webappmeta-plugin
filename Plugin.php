@@ -8,7 +8,7 @@ class Plugin extends PluginBase {
 		return [
 			'name'        => 'zaxbux.webappmeta::lang.plugin.name',
 			'description' => 'zaxbux.webappmeta::lang.plugin.description',
-			'author:'     => 'Zachary Schneider',
+			'author'     => 'Zachary Schneider',
 			'icon'        => 'icon-tags',
 			'homepage'    => 'https://www.zacharyschneider.ca/'
 		];
