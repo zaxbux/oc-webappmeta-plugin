@@ -154,7 +154,7 @@ tabs:
       tab: Advanced
       span: right
       label: The preferred display mode for the web application.
-      comment: <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest#display">More details.</a>
+      comment: <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest#display" target="_blank" rel="noopener noreferrer">More details.</a>
       commentHtml: true
       type: dropdown
       options:
