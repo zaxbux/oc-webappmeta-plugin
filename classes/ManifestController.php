@@ -100,6 +100,6 @@ class ManifestController extends CmsController {
 		}
 
 		return Response::make($xmlDoc->saveXML())
-			->header('Content-Type', 'text/html');
+			->header('Content-Type', 'text/xml');
 	}
 }
