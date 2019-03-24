@@ -46,15 +46,6 @@ class Plugin extends PluginBase {
 	}
 
 	public function boot() {
-		// Validate json (for custom json field)
-		Validator::extend('json', function($attribute, $value, $parameters) {
-			if (!empty($value)) {
-				@\json_decode($value);
-
-				return json_last_error() === JSON_ERROR_NONE;
-			}
-
-			return false;
-		});
+		Validator::extend('json', Zaxbux\WebAppMeta\Rules\Json::class);
 	}
 }
