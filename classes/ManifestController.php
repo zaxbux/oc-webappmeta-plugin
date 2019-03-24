@@ -11,8 +11,7 @@ use Zaxbux\WebAppMeta\Models\Settings;
 class ManifestController extends CmsController {
 	public function getManifest() {
 		$manifestJson = [
-			'manifest_version' => 2,
-			'display_mode'     => 'browser'
+			'manifest_version' => 2
 		];
 
 		// Basic fields
@@ -67,7 +66,8 @@ class ManifestController extends CmsController {
 		}
 
 		return Response::json($manifestJson)
-			->header('Content-Type', 'application/manifest+json');
+			->header('Content-Type', 'application/manifest+json')
+			->header('Cache-Control', 'max-age=2592000'); // Cache for 30 days
 	}
 
 	public function getMSAppConfig() {
