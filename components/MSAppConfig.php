@@ -9,7 +9,7 @@ class MSAppConfig extends ComponentBase {
 	public function componentDetails() {
 		return [
 			'name'        => 'Microsoft App Config XML',
-			'description' => 'Output a link to the MS Edge browser config XML.'
+			'description' => 'Output a link to the MS Edge browserconfig.xml'
 		];
 	}
 

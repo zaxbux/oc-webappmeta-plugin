@@ -9,7 +9,7 @@ class ManifestLink extends ComponentBase {
 	public function componentDetails() {
 		return [
 			'name'        => 'Web App Manifest',
-			'description' => 'Output a link to the web app manifest.'
+			'description' => 'Output a link to the web app manifest.json'
 		];
 	}
 }
