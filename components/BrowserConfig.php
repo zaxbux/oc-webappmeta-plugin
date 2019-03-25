@@ -5,11 +5,11 @@ namespace Zaxbux\WebAppMeta\Components;
 use Cms\Classes\ComponentBase;
 use Zaxbux\WebAppMeta\Models\Settings;
 
-class MSAppConfig extends ComponentBase {
+class BrowserConfig extends ComponentBase {
 	public function componentDetails() {
 		return [
-			'name'        => 'zaxbux.webappmeta::lang.component.msappconfig.name',
-			'description' => 'zaxbux.webappmeta::lang.component.msappconfig.description'
+			'name'        => 'zaxbux.webappmeta::lang.component.browserconfig.name',
+			'description' => 'zaxbux.webappmeta::lang.component.browserconfig.description'
 		];
 	}
 
