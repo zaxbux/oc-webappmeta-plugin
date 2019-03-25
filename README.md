@@ -59,6 +59,7 @@ The `MSAppConfig` component outputs a link to `browserconfig.xml`.
 ```
 
 ## Change Log
+ * 1.1.4 - Re-ordered backend settings to make more sense
  * 1.1.3 - Localization improvements
  * 1.1.2 - Renamed component
  * 1.1.1 - Localization improvements
