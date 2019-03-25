@@ -1,5 +1,6 @@
 <?php namespace Zaxbux\WebAppMeta\Rules;
 
+use Lang;
 use Illuminate\Contracts\Validation\Rule;
 
 class Json implements Rule {
@@ -39,6 +40,6 @@ class Json implements Rule {
 	 * @return string
 	 */
 	public function message() {
-		return "The :attribute must be a valid JSON string.";
+		return Lang::get('zaxbux.webappmeta::lang.rule.json');
 	}
 }

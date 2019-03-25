@@ -8,8 +8,8 @@ use Zaxbux\WebAppMeta\Models\Settings;
 class ManifestLink extends ComponentBase {
 	public function componentDetails() {
 		return [
-			'name'        => 'Web App Manifest',
-			'description' => 'Output a link to the web app manifest.json'
+			'name'        => 'zaxbux.webappmeta::lang.component.manifestlink.name',
+			'description' => 'zaxbux.webappmeta::lang.component.manifestlink.description'
 		];
 	}
 }

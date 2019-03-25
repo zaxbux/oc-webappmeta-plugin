@@ -8,8 +8,8 @@ use Zaxbux\WebAppMeta\Models\Settings;
 class MSAppConfig extends ComponentBase {
 	public function componentDetails() {
 		return [
-			'name'        => 'Microsoft App Config XML',
-			'description' => 'Output a link to the MS Edge browserconfig.xml'
+			'name'        => 'zaxbux.webappmeta::lang.component.msappconfig.name',
+			'description' => 'zaxbux.webappmeta::lang.component.msappconfig.description'
 		];
 	}
 

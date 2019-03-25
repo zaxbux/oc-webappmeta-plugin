@@ -9,7 +9,7 @@ class Plugin extends PluginBase {
 		return [
 			'name'        => 'zaxbux.webappmeta::lang.plugin.name',
 			'description' => 'zaxbux.webappmeta::lang.plugin.description',
-			'author'     => 'Zachary Schneider',
+			'author'      => 'Zachary Schneider',
 			'icon'        => 'icon-tags',
 			'homepage'    => 'https://www.zacharyschneider.ca/'
 		];
@@ -26,8 +26,8 @@ class Plugin extends PluginBase {
 	public function registerPermissions() {
 		return [
 			'zaxbux.webappmeta.access_settings' => [
-				'tab'   => 'Web App Meta Plugin',
-				'label' => 'Settings access',
+				'tab'   => 'zaxbux.webappmeta::lang.permission.access_settings.tab',
+				'label' => 'zaxbux.webappmeta::lang.permission.access_settings.label',
 			]
 		];
 	}
@@ -35,9 +35,9 @@ class Plugin extends PluginBase {
 	public function registerSettings() {
 		return [
 			'config' => [
-				'label'       => 'Web App Metadata',
+				'label'       => 'zaxbux.webappmeta::lang.plugin.name',
 				'icon'        => 'icon-tags',
-				'description' => 'Configure the site\'s web application metadata.',
+				'description' => 'zaxbux.webappmeta::lang.plugin.description',
 				'class'       => 'Zaxbux\WebAppMeta\Models\Settings',
 				'order'       => '600',
 				'permissions' => ['zaxbux.webappmeta.access_settings'],

@@ -8,8 +8,8 @@ use Zaxbux\WebAppMeta\Models\Settings;
 class MetaThemeColor extends ComponentBase {
 	public function componentDetails() {
 		return [
-			'name'        => 'Meta Tag Theme Color',
-			'description' => 'Outputs the meta tag for the configured theme color.'
+			'name'        => 'zaxbux.webappmeta::lang.component.metathemecolor.name',
+			'description' => 'zaxbux.webappmeta::lang.component.metathemecolor.description'
 		];
 	}
 
