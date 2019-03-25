@@ -50,12 +50,12 @@ The `manifestLink` component outputs a link to `manifest.json`.
 
 ### browserconfig.xml Component
 
-The `borwserConfig` component outputs a link to `browserconfig.xml`.
+The `browserConfig` component outputs a link to `browserconfig.xml`.
 
 ```
-[borwserConfig]
+[browserConfig]
 ==
-{% component 'borwserConfig' %}
+{% component 'browserConfig' %}
 ```
 
 ## Change Log
