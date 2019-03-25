@@ -59,6 +59,7 @@ The `MSAppConfig` component outputs a link to `browserconfig.xml`.
 ```
 
 ## Change Log
+ * 1.1.3 - Localization improvements
  * 1.1.2 - Renamed component
  * 1.1.1 - Localization improvements
  * 1.1.0 - Renamed plugin

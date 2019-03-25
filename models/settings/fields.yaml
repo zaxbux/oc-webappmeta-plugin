@@ -2,8 +2,8 @@ fields:
   # Required attributes
   name:
     span: left
-    label: App Name
-    comment: The name (max 45 characters) is the primary identifier of the app.
+    label: zaxbux.webappmeta::lang.settings.field.name.name
+    comment: zaxbux.webappmeta::lang.settings.field.name.comment
     type: text
     required: true
     attributes:
@@ -11,8 +11,8 @@ fields:
 
   short_name:
     span: right
-    label: Short Name
-    comment: Short version (max 12 characters) of the app's name.
+    label: zaxbux.webappmeta::lang.settings.field.short_name.name
+    comment: zaxbux.webappmeta::lang.settings.field.short_name.comment
     type: text
     required: true
     attributes:
@@ -20,15 +20,15 @@ fields:
 
   author:
     span: left
-    label: Author
-    comment:
+    label: zaxbux.webappmeta::lang.settings.field.author.name
+    comment: zaxbux.webappmeta::lang.settings.field.author.comment
     type: text
     required: true
 
   description:
     span: right
-    label: Description
-    comment: A plain text string (max 132 characters) that describes the extension.
+    label: zaxbux.webappmeta::lang.settings.field.description.name
+    comment: zaxbux.webappmeta::lang.settings.field.description.comment
     type: text
     required: true
     attributes:
@@ -40,31 +40,31 @@ tabs:
     theme_color:
       tab: Colours
       span: left
-      label: Theme Color
-      comment: Used in manifest.json and browserconfig.xml
+      label: zaxbux.webappmeta::lang.settings.field.theme_color.name
+      comment: zaxbux.webappmeta::lang.settings.field.theme_color.comment
       type: colorpicker
       availableColors: []
 
     background_color:
       tab: Colours
       span: right
-      label: Background Color
-      comment: The expected background color for the web application. Often loads before the stylesheet, ensuring a smooth transition.
+      label: zaxbux.webappmeta::lang.settings.field.background_color.name
+      comment: zaxbux.webappmeta::lang.settings.field.background_color.comment
       type: colorpicker
       availableColors: []
 
     # Icons
     ## Manifest.json Icons
     app_icon_section:
-      tab: Icons
-      label: App Icons
-      comment: Used in manifest.json
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
+      label: zaxbux.webappmeta::lang.settings.field.app_icon_section.name
+      comment: zaxbux.webappmeta::lang.settings.field.app_icon_section.comment
       type: section
 
     app_icon_192:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: left
-      label: 192x192 App Icon
+      label: zaxbux.webappmeta::lang.settings.field.app_icon_192.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -72,9 +72,9 @@ tabs:
       imageHeight: 192
 
     app_icon_512:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: right
-      label: 512x512 App Icon
+      label: zaxbux.webappmeta::lang.settings.field.app_icon_512.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -83,15 +83,15 @@ tabs:
 
     ## MS Edge Icons
     ms_tile_section:
-      tab: Icons
-      label: Microsoft Edge Tiles
-      comment: Used in browserconfig.xml
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
+      label: zaxbux.webappmeta::lang.settings.field.ms_tile_section.name
+      comment: zaxbux.webappmeta::lang.settings.field.ms_tile_section.comment
       type: section
 
     msapp_square70x70logo:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: left
-      label: Micrsoft Edge Tile 70x70
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square70x70logo.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -99,9 +99,9 @@ tabs:
       imageWidth: 70
 
     msapp_square150x150logo:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: right
-      label: Micrsoft Edge Tile 150x150
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square150x150logo.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -109,9 +109,9 @@ tabs:
       imageWidth: 150
 
     msapp_wide310x150logo:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: left
-      label: Micrsoft Edge Tile 310x150
+      label: zaxbux.webappmeta::lang.settings.field.msapp_wide310x150logo.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -119,9 +119,9 @@ tabs:
       imageHeight: 150
 
     msapp_square310x310logo:
-      tab: Icons
+      tab: zaxbux.webappmeta::lang.settings.tab.icons
       span: right
-      label: Micrsoft Edge Tile 310x310
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square310x310logo.name
       type: mediafinder
       mode: image
       fileTypes: png
@@ -130,49 +130,49 @@ tabs:
 
     # Advanced
     version:
-      tab: Advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
       span: left
-      label: Version
-      comment:
+      label: zaxbux.webappmeta::lang.settings.field.version.name
+      comment: zaxbux.webappmeta::lang.settings.field.version.comment
       type: text
 
     version_name:
-      tab: Advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
       span: right
-      label: Version Name
-      comment:
+      label: zaxbux.webappmeta::lang.settings.field.version_name.name
+      comment: zaxbux.webappmeta::lang.settings.field.version_name.comment
       type: text
 
     lang:
-      tab: Advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
       span: left
-      label: Language
-      comment: The language of the manifest attributes
+      label: zaxbux.webappmeta::lang.settings.field.lang.name
+      comment: zaxbux.webappmeta::lang.settings.field.lang.comment
       type: text
 
     display_mode:
-      tab: Advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
       span: right
-      label: The preferred display mode for the web application.
-      comment: <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest#display" target="_blank" rel="noopener noreferrer">More details.</a>
+      label: zaxbux.webappmeta::lang.settings.display_mode.name.name
+      comment: zaxbux.webappmeta::lang.settings.display_mode.name.comment
       commentHtml: true
       type: dropdown
       options:
-        browser: Browser (Default)
-        minimal-ui: Minimal UI
-        standalone: Standalone
-        fullscreen: Fullscreen
+        browser: zaxbux.webappmeta::lang.settings.field.display_mode.options.browser
+        minimal-ui: zaxbux.webappmeta::lang.settings.field.display_mode.options.minimal-ui
+        standalone: zaxbux.webappmeta::lang.settings.field.display_mode.options.standalone
+        fullscreen: zaxbux.webappmeta::lang.settings.field.display_mode.options.fullscreen
 
     start_url:
-      tab: Advanced
-      label: Start URL
-      comment: The start_url tells the browser where your application should start when it is launched, and prevents the app from starting on whatever page the user was on when they added your app to their home screen.
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
+      label: zaxbux.webappmeta::lang.settings.field.start_url.name
+      comment: zaxbux.webappmeta::lang.settings.field.start_url.comment
       type: text
 
     # Custom JSON
     custom_manifest:
-      tab: Advanced
-      label: Custom Manifest JSON
+      tab: zaxbux.webappmeta::lang.settings.tab.advanced
+      label: zaxbux.webappmeta::lang.settings.field.custom_manifest.name
+      comment: zaxbux.webappmeta::lang.settings.field.custom_manifest.comment
       type: codeeditor
-      language: javascript
-      comment: This JSON will be appended to the web app manifest, and override any exsiting properties.
+      language: javascript 
