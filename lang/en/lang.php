@@ -7,9 +7,13 @@
 			'label' => 'Web App Metadata',
 			'description' => 'Configure the site\'s web application metadata.',
 			'field' => [
-				'name' => [
+				'app_name' => [
 					'label' => 'App Name',
 					'comment' => 'The name (max 45 characters) is the primary identifier of the app.'
+				],
+				'theme_color' => [
+					'label' => 'Theme Color',
+					'comment' => ''
 				],
 				'short_name' => [
 					'label' => 'Short Name',
@@ -23,39 +27,9 @@
 					'label' => 'Description',
 					'comment' => 'A plain text string (max 132 characters) that describes the extension.'
 				],
-				'theme_color' => [
-					'label' => 'Theme Color',
-					'comment' => 'Used in manifest.json and browserconfig.xml'
-				],
-				'background_color' => [
-					'label' => 'Background Color',
-					'comment' => 'The expected background color for the web application. Often loads before the stylesheet, ensuring a smooth transition.'
-				],
-				'app_icon_section' => [
-					'label' => 'App Icons',
-					'comment' => 'Used in manifest.json'
-				],
-				'app_icon_192' => [
-					'label' => '192x192 App Icon'
-				],
-				'app_icon_512' => [
-					'label' => '512x512 App Icon'
-				],
-				'ms_tile_section' => [
-					'label' => 'Microsoft Edge Tiles',
-					'comment' => 'Used in browserconfig.xml'
-				],
-				'msapp_square70x70logo' => [
-					'label' => 'Micrsoft Edge Tile 70x70'
-				],
-				'msapp_square150x150logo' => [
-					'label' => 'Micrsoft Edge Tile 150x150'
-				],
-				'msapp_wide310x150logo' => [
-					'label' => 'Micrsoft Edge Tile 310x150'
-				],
-				'msapp_square310x310logo' => [
-					'label' => 'Micrsoft Edge Tile 310x310'
+				'lang' => [
+					'label' => 'Language',
+					'comment' => 'The language of the manifest attributes'
 				],
 				'version' => [
 					'label' => 'Version',
@@ -64,10 +38,6 @@
 				'version_name' => [
 					'label' => 'Version Name',
 					'comment' => ''
-				],
-				'lang' => [
-					'label' => 'Language',
-					'comment' => 'The language of the manifest attributes'
 				],
 				'display_mode' => [
 					'label' => 'The preferred display mode for the web application.',
@@ -83,16 +53,51 @@
 					'label' => 'Start URL',
 					'comment' => 'The start_url tells the browser where your application should start when it is launched, and prevents the app from starting on whatever page the user was on when they added your app to their home screen.'
 				],
+				'background_color' => [
+					'label' => 'Background Color',
+					'comment' => 'The expected background color for the web application. Often loads before the stylesheet, ensuring a smooth transition.'
+				],
+				'app_icon_192' => [
+					'label' => '192x192 App Icon'
+				],
+				'app_icon_512' => [
+					'label' => '512x512 App Icon'
+				],
 				'custom_manifest' => [
 					'label' => 'Custom Manifest JSON',
 					'comment' => 'This JSON will be appended to the web app manifest and override any exsiting properties.'
 				],
+				'msapp_square70x70logo' => [
+					'label' => 'Micrsoft Edge Tile 70x70'
+				],
+				'msapp_square150x150logo' => [
+					'label' => 'Micrsoft Edge Tile 150x150'
+				],
+				'msapp_wide310x150logo' => [
+					'label' => 'Micrsoft Edge Tile 310x150'
+				],
+				'msapp_square310x310logo' => [
+					'label' => 'Micrsoft Edge Tile 310x310'
+				],
 			],
 			'tab' => [
-				'advanced' => 'Advanced',
-				'colors' => 'Colors',
-				'icons' => 'Icons',
-			]
+				'manifest_json' => 'manifest.json',
+				'browserconfig' => 'browserconfig.xml',
+			],
+			'section' => [
+				'app_icons' => [
+					'label' => 'App Icons',
+					'comment' => ''
+				],
+				'edge_tiles' => [
+					'label' => 'Microsoft Edge Tiles',
+					'comment' => '',
+				],
+				'advanced' => [
+					'label' => 'Advanced',
+					'comment' => ''
+				],
+			],
 		],
     'permission' => [
         'access_settings' => [

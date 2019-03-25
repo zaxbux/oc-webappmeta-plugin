@@ -1,160 +1,73 @@
 fields:
-  # Required attributes
   name:
     span: left
-    label: zaxbux.webappmeta::lang.settings.field.name.name
-    comment: zaxbux.webappmeta::lang.settings.field.name.comment
+    label: zaxbux.webappmeta::lang.settings.field.app_name.label
+    comment: zaxbux.webappmeta::lang.settings.field.app_name.comment
     type: text
     required: true
     attributes:
       maxlength: 45
-
-  short_name:
-    span: right
-    label: zaxbux.webappmeta::lang.settings.field.short_name.name
-    comment: zaxbux.webappmeta::lang.settings.field.short_name.comment
-    type: text
-    required: true
-    attributes:
-      maxlength: 12
-
-  author:
-    span: left
-    label: zaxbux.webappmeta::lang.settings.field.author.name
-    comment: zaxbux.webappmeta::lang.settings.field.author.comment
-    type: text
-    required: true
-
-  description:
-    span: right
-    label: zaxbux.webappmeta::lang.settings.field.description.name
-    comment: zaxbux.webappmeta::lang.settings.field.description.comment
-    type: text
-    required: true
-    attributes:
-      maxlength: 132
-
-tabs:
-  fields:
-    # App Identity
-    theme_color:
-      tab: Colours
-      span: left
-      label: zaxbux.webappmeta::lang.settings.field.theme_color.name
+  
+  theme_color:
+      span: right
+      label: zaxbux.webappmeta::lang.settings.field.theme_color.label
       comment: zaxbux.webappmeta::lang.settings.field.theme_color.comment
       type: colorpicker
       availableColors: []
 
-    background_color:
-      tab: Colours
-      span: right
-      label: zaxbux.webappmeta::lang.settings.field.background_color.name
-      comment: zaxbux.webappmeta::lang.settings.field.background_color.comment
-      type: colorpicker
-      availableColors: []
-
-    # Icons
-    ## Manifest.json Icons
-    app_icon_section:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
-      label: zaxbux.webappmeta::lang.settings.field.app_icon_section.name
-      comment: zaxbux.webappmeta::lang.settings.field.app_icon_section.comment
-      type: section
-
-    app_icon_192:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
+tabs:
+  fields:
+    short_name:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: left
-      label: zaxbux.webappmeta::lang.settings.field.app_icon_192.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageWidth: 192
-      imageHeight: 192
-
-    app_icon_512:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
+      label: zaxbux.webappmeta::lang.settings.field.short_name.label
+      comment: zaxbux.webappmeta::lang.settings.field.short_name.comment
+      type: text
+      attributes:
+        maxlength: 12
+    
+    author:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: right
-      label: zaxbux.webappmeta::lang.settings.field.app_icon_512.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageWidth: 512
-      imageHeight: 512
-
-    ## MS Edge Icons
-    ms_tile_section:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
-      label: zaxbux.webappmeta::lang.settings.field.ms_tile_section.name
-      comment: zaxbux.webappmeta::lang.settings.field.ms_tile_section.comment
-      type: section
-
-    msapp_square70x70logo:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
+      label: zaxbux.webappmeta::lang.settings.field.author.label
+      comment: zaxbux.webappmeta::lang.settings.field.author.comment
+      type: text
+    
+    description:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: left
-      label: zaxbux.webappmeta::lang.settings.field.msapp_square70x70logo.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageHeight: 70
-      imageWidth: 70
-
-    msapp_square150x150logo:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
+      label: zaxbux.webappmeta::lang.settings.field.description.label
+      comment: zaxbux.webappmeta::lang.settings.field.description.comment
+      type: text
+      attributes:
+        maxlength: 132
+    
+    lang:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: right
-      label: zaxbux.webappmeta::lang.settings.field.msapp_square150x150logo.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageHeight: 150
-      imageWidth: 150
-
-    msapp_wide310x150logo:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
-      span: left
-      label: zaxbux.webappmeta::lang.settings.field.msapp_wide310x150logo.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageWidth: 310
-      imageHeight: 150
-
-    msapp_square310x310logo:
-      tab: zaxbux.webappmeta::lang.settings.tab.icons
-      span: right
-      label: zaxbux.webappmeta::lang.settings.field.msapp_square310x310logo.name
-      type: mediafinder
-      mode: image
-      fileTypes: png
-      imageHeight: 310
-      imageWidth: 310
-
-    # Advanced
+      label: zaxbux.webappmeta::lang.settings.field.lang.label
+      comment: zaxbux.webappmeta::lang.settings.field.lang.comment
+      type: text
+    
     version:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: left
-      label: zaxbux.webappmeta::lang.settings.field.version.name
+      label: zaxbux.webappmeta::lang.settings.field.version.label
       comment: zaxbux.webappmeta::lang.settings.field.version.comment
       type: text
 
     version_name:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
       span: right
-      label: zaxbux.webappmeta::lang.settings.field.version_name.name
+      label: zaxbux.webappmeta::lang.settings.field.version_name.label
       comment: zaxbux.webappmeta::lang.settings.field.version_name.comment
       type: text
 
-    lang:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
-      span: left
-      label: zaxbux.webappmeta::lang.settings.field.lang.name
-      comment: zaxbux.webappmeta::lang.settings.field.lang.comment
-      type: text
-
     display_mode:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
-      span: right
-      label: zaxbux.webappmeta::lang.settings.display_mode.name.name
-      comment: zaxbux.webappmeta::lang.settings.display_mode.name.comment
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      span: left
+      label: zaxbux.webappmeta::lang.settings.field.display_mode.label
+      comment: zaxbux.webappmeta::lang.settings.field.display_mode.comment
       commentHtml: true
       type: dropdown
       options:
@@ -164,15 +77,101 @@ tabs:
         fullscreen: zaxbux.webappmeta::lang.settings.field.display_mode.options.fullscreen
 
     start_url:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
-      label: zaxbux.webappmeta::lang.settings.field.start_url.name
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      span: right
+      label: zaxbux.webappmeta::lang.settings.field.start_url.label
       comment: zaxbux.webappmeta::lang.settings.field.start_url.comment
       type: text
 
-    # Custom JSON
+    background_color:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      span: left
+      label: zaxbux.webappmeta::lang.settings.field.background_color.label
+      comment: zaxbux.webappmeta::lang.settings.field.background_color.comment
+      type: colorpicker
+      availableColors: []
+
+    app_icons_section:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      label: zaxbux.webappmeta::lang.settings.section.app_icons.label
+      comment: zaxbux.webappmeta::lang.settings.section.app_icons.comment
+      type: section
+
+    app_icon_192:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      span: left
+      label: zaxbux.webappmeta::lang.settings.field.app_icon_192.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 192
+      imageHeight: 192
+
+    app_icon_512:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      span: right
+      label: zaxbux.webappmeta::lang.settings.field.app_icon_512.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 512
+      imageHeight: 512
+
+    advanced_section:
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      label: zaxbux.webappmeta::lang.settings.section.advanced.label
+      comment: zaxbux.webappmeta::lang.settings.section.advanced.comment
+      type: section
+
     custom_manifest:
-      tab: zaxbux.webappmeta::lang.settings.tab.advanced
-      label: zaxbux.webappmeta::lang.settings.field.custom_manifest.name
+      tab: zaxbux.webappmeta::lang.settings.tab.manifest_json
+      label: zaxbux.webappmeta::lang.settings.field.custom_manifest.label
       comment: zaxbux.webappmeta::lang.settings.field.custom_manifest.comment
       type: codeeditor
       language: javascript 
+
+    edge_tiles_section:
+      tab: zaxbux.webappmeta::lang.settings.tab.browserconfig
+      label: zaxbux.webappmeta::lang.settings.section.edge_tiles.label
+      comment: zaxbux.webappmeta::lang.settings.section.edge_tiles.comment
+      type: section
+
+    msapp_square70x70logo:
+      tab: zaxbux.webappmeta::lang.settings.tab.browserconfig
+      span: left
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square70x70logo.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 70
+      imageWidth: 70
+
+    msapp_square150x150logo:
+      tab: zaxbux.webappmeta::lang.settings.tab.browserconfig
+      span: right
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square150x150logo.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 150
+      imageWidth: 150
+
+    msapp_wide310x150logo:
+      tab: zaxbux.webappmeta::lang.settings.tab.browserconfig
+      span: left
+      label: zaxbux.webappmeta::lang.settings.field.msapp_wide310x150logo.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageWidth: 310
+      imageHeight: 150
+
+    msapp_square310x310logo:
+      tab: zaxbux.webappmeta::lang.settings.tab.browserconfig
+      span: right
+      label: zaxbux.webappmeta::lang.settings.field.msapp_square310x310logo.label
+      type: mediafinder
+      mode: image
+      fileTypes: png
+      imageHeight: 310
+      imageWidth: 310
