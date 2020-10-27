@@ -4,3 +4,4 @@
 1.1.2: Renamed component
 1.1.3: Localization improvements
 1.1.4: Re-ordered backend settings
+1.1.5: Update manifest.json to be manifest.webmanifest, removed legacy browserconfig.xml

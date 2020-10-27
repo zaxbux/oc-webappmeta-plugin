@@ -18,7 +18,6 @@ class Plugin extends PluginBase {
 	public function registerComponents() {
 		return [
 			'Zaxbux\WebAppMeta\Components\ManifestLink'   => 'webAppManifest',
-			'Zaxbux\WebAppMeta\Components\BrowserConfig'  => 'browserConfig',
 			'Zaxbux\WebAppMeta\Components\MetaThemeColor' => 'metaThemeColor',
 		];
 	}
