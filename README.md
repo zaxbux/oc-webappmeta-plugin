@@ -1,6 +1,6 @@
 # Web Application Metadata
 
-This October CMS plugin allows you to integrate common web-app metadata on your website. The currently supported tags and files are `theme-color`, `manifest.json`, `browserconfig.xml`.
+This October CMS plugin allows you to integrate common web-app metadata on your website. The currently supported tags and files are `theme-color`, and `manifest.json`.
 
 ## Requirements
 
@@ -18,11 +18,11 @@ Colors used to style the browser UI.
 
 ### Icons
 
-Icons for `manifest.webmanifest` (progressive web apps), and `browserconfig.xml` (IE11/Edge).
+Icons for `manifest.webmanifest` (progressive web apps).
 
 ### Advanced
 
-More options for `manifest.webmanifest`. In case you need a configuration 
+More options for `manifest.webmanifest`. In case you need a configuration not covered by the avilable options.
 
 ## Components
 
