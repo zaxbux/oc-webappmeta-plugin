@@ -18,11 +18,11 @@ Colors used to style the browser UI.
 
 ### Icons
 
-Icons for `manifest.json` (progressive web apps), and `browserconfig.xml` (IE11/Edge).
+Icons for `manifest.webmanifest` (progressive web apps), and `browserconfig.xml` (IE11/Edge).
 
 ### Advanced
 
-More options for `manifest.json`. In case you need a configuration 
+More options for `manifest.webmanifest`. In case you need a configuration 
 
 ## Components
 
@@ -48,17 +48,8 @@ The `manifestLink` component outputs a link to `manifest.json`.
 {% component 'manifestLink' %}
 ```
 
-### browserconfig.xml Component
-
-The `browserConfig` component outputs a link to `browserconfig.xml`.
-
-```
-[browserConfig]
-==
-{% component 'browserConfig' %}
-```
-
 ## Change Log
+ * 1.1.5 - Update `manifest.json` to be `manifest.webmanifest`, removed legacy `browserconfig.xml`
  * 1.1.4 - Re-ordered backend settings to make more sense
  * 1.1.3 - Localization improvements
  * 1.1.2 - Renamed component

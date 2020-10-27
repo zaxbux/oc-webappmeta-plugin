@@ -67,31 +67,14 @@
 					'label' => 'Custom Manifest JSON',
 					'comment' => 'This JSON will be appended to the web app manifest and override any exsiting properties.'
 				],
-				'msapp_square70x70logo' => [
-					'label' => 'Micrsoft Edge Tile 70x70'
-				],
-				'msapp_square150x150logo' => [
-					'label' => 'Micrsoft Edge Tile 150x150'
-				],
-				'msapp_wide310x150logo' => [
-					'label' => 'Micrsoft Edge Tile 310x150'
-				],
-				'msapp_square310x310logo' => [
-					'label' => 'Micrsoft Edge Tile 310x310'
-				],
 			],
 			'tab' => [
 				'manifest_json' => 'manifest.json',
-				'browserconfig' => 'browserconfig.xml',
 			],
 			'section' => [
 				'app_icons' => [
 					'label' => 'App Icons',
 					'comment' => ''
-				],
-				'edge_tiles' => [
-					'label' => 'Microsoft Edge Tiles',
-					'comment' => '',
 				],
 				'advanced' => [
 					'label' => 'Advanced',
@@ -114,10 +97,6 @@
 				'name' => 'Meta Tag Theme Color',
 				'description' => 'Outputs the meta tag for the configured theme color',
 			],
-			'browserconfig' => [
-				'name' => 'Microsoft Browser Config',
-				'description' => 'Output a link to the MS Edge browserconfig.xml',
-			]
 		],
 		'rule' => [
 			'json' => 'The :attribute must be a valid JSON string.'
